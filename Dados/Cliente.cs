@@ -10,6 +10,7 @@ namespace Dados
     {
         public int Id { get; set; }
         public TipoPessoa tipoPessoa { get; set; }
+        // ola
         public string Nome { get; set; }
         public string Email { get; set; }
     }
