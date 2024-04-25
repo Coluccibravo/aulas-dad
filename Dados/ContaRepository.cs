@@ -8,5 +8,16 @@ namespace Dados
 {
     class ContaRepository
     {
+        private static List<Conta> _conta = new List<Conta>();
+
+        public void Adicionar(Conta conta)
+        {
+            _conta.Add(conta);
+        }
+
+        public IEnumerable<Conta> ObterTodos()
+        {
+            return _conta;
+        }
     }
 }

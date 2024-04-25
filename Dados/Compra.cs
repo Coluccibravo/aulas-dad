@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dados
 {
-    class Compra
+    public class Compra
     {
         private int id;
         private DateTime instante;

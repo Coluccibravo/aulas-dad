@@ -10,14 +10,14 @@ namespace Dados
     {
         private int id;
         private string descricao;
-        private Tipoconta tipoConta;
+        private TipoConta tipoConta;
         private Boolean status;
 
         public Conta()
         {
         }
 
-        public Conta(int id, string descricao, Tipoconta tipoConta, bool status)
+        public Conta(int id, string descricao, TipoConta tipoConta, bool status)
         {
             this.id = id;
             this.descricao = descricao;
@@ -27,7 +27,7 @@ namespace Dados
 
         public int Id { get => id; set => id = value; }
         public string Descricao { get => descricao; set => descricao = value; }
-        public Tipoconta TipoConta { get => tipoConta; set => tipoConta = value; }
+        public TipoConta TipoConta { get => tipoConta; set => tipoConta = value; }
         public bool Status { get => status; set => status = value; }
     }
 }

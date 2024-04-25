@@ -8,5 +8,16 @@ namespace Dados
 {
     class FornecedorRepository
     {
+        private static List<Fornecedor> _fornecedor = new List<Fornecedor>();
+
+        public void Adicionar(Fornecedor fornecedor)
+        {
+            _fornecedor.Add(fornecedor);
+        }
+
+        public IEnumerable<Fornecedor> ObterTodos()
+        {
+            return _fornecedor;
+        }
     }
 }

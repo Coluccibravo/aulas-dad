@@ -8,5 +8,16 @@ namespace Dados
 {
     class CategoriaRepository
     {
+        public static List<Categoria> _categoria = new List<Categoria>();
+
+        public void Adicionar(Categoria categoria)
+        {
+            _categoria.Add(categoria);
+        }
+
+        public IEnumerable<Categoria> ObterTodos()
+        {
+            return _categoria;
+        }
     }
 }

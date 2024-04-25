@@ -24,7 +24,7 @@ namespace Negocio
             var cliente = new Cliente
             {
                 Id = id,
-                tipoPessoa = tipoPessoa,
+                tipoCliente = tipoPessoa,
                 Nome = nome,
                 Email = email
             };

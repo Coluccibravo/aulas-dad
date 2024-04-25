@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dados
 {
-    class Produto
+    public class Produto
     {
         private int id;
         private string nome;
