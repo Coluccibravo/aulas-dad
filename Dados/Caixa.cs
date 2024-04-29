@@ -6,9 +6,21 @@ using System.Threading.Tasks;
 
 namespace Dados
 {
-    class Caixa
+    public class Caixa
     {
-        private int id;
-        private string name;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Caixa()
+        {
+        }
+
+        public Caixa(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+
+ 
+
     }
 }

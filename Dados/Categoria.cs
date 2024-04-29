@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dados
 {
-    class Categoria
+    public class Categoria
     {
-        private int id;
-        private string nome;
+        public int Id { get; set; }
+        public string Nome { get; set; }
 
         public Categoria()
         {
@@ -20,8 +20,5 @@ namespace Dados
             this.Id = id;
             this.Nome = nome;
         }
-
-        public int Id { get => id; set => id = value; }
-        public string Nome { get => nome; set => nome = value; }
     }
 }
