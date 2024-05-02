@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Dados
 {
-    class ContaPagar
+    public class ContaPagar
     {
-        private int id;
-        private decimal valor;
-        private DateTime datadecadastro;
-        private DateTime datadevencimento;
-        private DateTime datadepagamento;
-        private MeioPagamento meiopagamento;
-        private EstadoPagamento situacao;
+        public int Id { get; set; }
+        public decimal Valor { get; set; }
+        public DateTime Datadecadastro { get; set; }
+        public DateTime Datadevencimento { get; set; }
+        public DateTime Datadepagamento { get; set; }
+        public MeioPagamento Meiopagamento { get; set; }
+        public EstadoPagamento Situacao { get; set; }
 
         public ContaPagar()
         {
@@ -22,21 +22,15 @@ namespace Dados
 
         public ContaPagar(int id, decimal valor, DateTime datadecadastro, DateTime datadevencimento, DateTime datadepagamento, MeioPagamento meiopagamento, EstadoPagamento situacao)
         {
-            this.id = id;
-            this.valor = valor;
-            this.datadecadastro = datadecadastro;
-            this.datadevencimento = datadevencimento;
-            this.datadepagamento = datadepagamento;
-            this.meiopagamento = meiopagamento;
-            this.situacao = situacao;
+            this.Id = id;
+            this.Valor = valor;
+            this.Datadecadastro = datadecadastro;
+            this.Datadevencimento = datadevencimento;
+            this.Datadepagamento = datadepagamento;
+            this.Meiopagamento = meiopagamento;
+            this.Situacao = situacao;
         }
 
-        public int Id { get => id; set => id = value; }
-        public decimal Valor { get => valor; set => valor = value; }
-        public DateTime Datadecadastro { get => datadecadastro; set => datadecadastro = value; }
-        public DateTime Datadevencimento { get => datadevencimento; set => datadevencimento = value; }
-        public DateTime Datadepagamento { get => datadepagamento; set => datadepagamento = value; }
-        public MeioPagamento Meiopagamento { get => meiopagamento; set => meiopagamento = value; }
-        public EstadoPagamento Situacao { get => situacao; set => situacao = value; }
+       
     }
 }

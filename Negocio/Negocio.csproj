@@ -44,6 +44,10 @@
     <Compile Include="CaixaService.cs" />
     <Compile Include="CategoriaService.cs" />
     <Compile Include="ClienteService.cs" />
+    <Compile Include="CompraService.cs" />
+    <Compile Include="ContaPagarService.cs" />
+    <Compile Include="ContaReceberService.cs" />
+    <Compile Include="ContaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

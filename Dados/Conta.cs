@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dados
 {
-    class Conta
+    public class Conta
     {
-        private int id;
-        private string descricao;
-        private TipoConta tipoConta;
-        private Boolean status;
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public TipoConta TipoConta { get; set; }
+        public Boolean Status { get; set; }
 
         public Conta()
         {
@@ -19,15 +19,10 @@ namespace Dados
 
         public Conta(int id, string descricao, TipoConta tipoConta, bool status)
         {
-            this.id = id;
-            this.descricao = descricao;
-            this.tipoConta = tipoConta;
-            this.status = status;
+            this.Id = id;
+            this.Descricao = descricao;
+            this.TipoConta = tipoConta;
+            this.Status = status;
         }
-
-        public int Id { get => id; set => id = value; }
-        public string Descricao { get => descricao; set => descricao = value; }
-        public TipoConta TipoConta { get => tipoConta; set => tipoConta = value; }
-        public bool Status { get => status; set => status = value; }
     }
 }

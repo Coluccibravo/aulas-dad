@@ -8,11 +8,11 @@ namespace Dados
 {
     public class Compra
     {
-        private int id;
-        private DateTime instante;
-        private string descricao;
-        private double desconto;
-        private double valor_total;
+        public int Id { get; set; }
+        public DateTime Instante { get; set; }
+        public string Descricao { get; set; }
+        public double Desconto { get; set; }
+        public double Valor_total {  get; set; }
 
         public Compra()
         {
@@ -20,17 +20,12 @@ namespace Dados
 
         public Compra(int id, DateTime instante, string descricao, double desconto, double valor_total)
         {
-            this.id = id;
-            this.instante = instante;
-            this.descricao = descricao;
-            this.desconto = desconto;
-            this.valor_total = valor_total;
+            this.Id = id;
+            this.Instante = instante;
+            this.Descricao = descricao;
+            this.Desconto = desconto;
+            this.Valor_total = valor_total;
         }
 
-        public int Id { get => id; set => id = value; }
-        public DateTime Instante { get => instante; set => instante = value; }
-        public string Descricao { get => descricao; set => descricao = value; }
-        public double Desconto { get => desconto; set => desconto = value; }
-        public double Valor_total { get => valor_total; set => valor_total = value; }
     }
 }

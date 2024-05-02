@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Dados;
 
-namespace Apresentacao
+namespace Dados
 {
-    class CompraRepository
+    public class CompraRepository
     {
         private static List<Compra> _compra = new List<Compra>();
 
